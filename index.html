@@ -2,14 +2,18 @@
 
 <html>
 
+<a class="screen-reader-text" href="#shop">Skip to content</a>
+
+
+
 <head>
+     <meta charset="utf-8">
     <title>Aloha Shop</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="https://npmcdn.com/flickity@2/dist/flickity.css" />
     <script src="https://use.fontawesome.com/a7bde5f23e.js"></script>
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
@@ -28,7 +32,7 @@
             </a>
         </div>
 
-        <hr>
+      <div class="line"></div>
 
         <nav class="menu">
             <h2 style="display:none">Navigation Menu</h2>
@@ -41,8 +45,8 @@
     </header>
 
     <section class="hero">
-        <h2 style="display:none">Hero Section</h2>
-        <p class="collection">NEW COLLECTION</p>
+        <h2 class="hidden-text">Hero Section</h2>
+        <p class="collection">New Collection</p>
         <p class="spring">Spring/Summer 2016</p>
     </section>
 
@@ -51,8 +55,8 @@
         <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </section>
 
-    <section id="shop">
-        <h2 style="display:none">Product Categories</h2>
+    <section id="shop" class="site-main" tabindex="-1">
+        <h2 class="hidden-text">Product Categories</h2>
         <div class="categories cat-mens"> <span class="cat-name">MEN'S</span> </div>
         <div class="categories cat-trends"> <span class="cat-name">TRENDS</span> </div>
         <div class="categories cat-glasses"><span class="cat-name">GLASSES</span></div>
@@ -64,17 +68,10 @@
     <section id="featured" class="featured">
         <h2>Most-Loved <span class="heavy">Products</span></h2>
 
-        <div class="carousel js-flickity" data-flickity-options='{
-    "prevNextButtons": false,
-    "imagesLoaded": true,
-    "percentPosition": false,
-    "cellAlign": "left",
-    "contain": true,
-    "autoPlay": true}'>
-
+    <div class="carousel js-flickity" >
             <div class="carousel-cell">
                 <img class="product-image" src="images/stretch-knit-dress.jpg" alt="stretch knit dress" />
-                <p class="product-category">DRESSES</p>
+                <p class="product-category">Dresses</p>
                 <h3>Stretch Knit Dress</h3>
                 <p class="product-price">$169.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -82,7 +79,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/cotton-blue-shirt.jpg" alt="cotton blue shirt" />
-                <p class="product-category">SHIRTS</p>
+                <p class="product-category">Shirts</p>
                 <h3>Cotton Blue Shirt</h3>
                 <p class="product-price">$89.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -90,7 +87,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/checked-stretch-dress.jpg" alt="checked stretch dress" />
-                <p class="product-category">DRESSES</p>
+                <p class="product-category">Dresses</p>
                 <h3>Checked Stretch Dress</h3>
                 <p class="product-price">$129.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -98,7 +95,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack" />
-                <p class="product-category">BAGS</p>
+                <p class="product-category">Bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p class="product-price">$69.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -106,7 +103,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/demin-overall-shorts.jpg" alt="denim overall shorts" />
-                <p class="product-category">DENIM</p>
+                <p class="product-category">Denim</p>
                 <h3>Denim Overall Shorts</h3>
                 <p class="product-price">$89.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -114,7 +111,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/pink-dotted-dress.jpg" alt="pink dotted dress" />
-                <p class="product-category">DRESSES</p>
+                <p class="product-category">Dresses</p>
                 <h3>Pink Dotted Dress</h3>
                 <p class="product-price">$99.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -122,7 +119,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/blue-silk-dress.jpg" alt="blue silk dress" />
-                <p class="product-category">BAGS</p>
+                <p class="product-category">Bags</p>
                 <h3>Blue Silk Dress</h3>
                 <p class="product-price">$119.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -130,7 +127,7 @@
 
             <div class="carousel-cell">
                 <img class="product-image" src="images/cotton-yellow-tshirt.jpg" alt="cotton yellow shirt" />
-                <p class="product-category">BAGS</p>
+                <p class="product-category">Bags</p>
                 <h3>Blue Hipster Backpack</h3>
                 <p class="product-price">$69.00</p>
                 <button class="add-to-cart-button">Add to Cart</button>
@@ -150,6 +147,7 @@
     </section>
 
     <footer>
+
         <div class="footer-container">
             <div class="contact-info">
 
@@ -158,7 +156,7 @@
                     <p class="html-css">Powered by HTML and CSS.</p>
                 </div>
 
-                <p class="phone-email">604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
+                <p class="phone-email">604-604-6040 <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
 
                 <div class="address">
                     <p>1490 W Broadway</p>

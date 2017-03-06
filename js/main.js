@@ -1,8 +1,5 @@
 $(function() {
 
-    //initializes the smooth scrolling plugin
-    smoothScroll.init();
-
     //regex function for verifying email input
     function isEmail(email) {
         var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -16,18 +13,13 @@ $(function() {
     $('.subscribe-button').on('click', function(event) {
 
         var newEmail = $('input').val();
+        event.preventDefault();
 
         if (isEmail(newEmail)) {
-
-            event.preventDefault();
             $('input').val('');
             alert("Thanks for subscribing!");
-
         } else if (newEmail === '') {
-
-            event.preventDefault();
             alert("Please submit a valid email address.");
-
         }
     });
 
@@ -42,5 +34,15 @@ $(function() {
         $('.counter-text').text(cartCount);
 
     });
+
+    //initialize flickity
+    $('.carousel').flickity({
+  "prevNextButtons": false,
+    "imagesLoaded": true,
+    "percentPosition": false,
+    "cellAlign": "left",
+    "contain": true,
+    "autoPlay": true
+});
 
 });
